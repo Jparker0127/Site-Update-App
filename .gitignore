@@ -1,0 +1,16 @@
+# Build artifacts
+bin/
+obj/
+*.dll
+*.exe
+
+# User-specific files
+*.user
+*.suo
+
+# VS settings
+.vs/
+
+# Other
+*.log
+*.cache
