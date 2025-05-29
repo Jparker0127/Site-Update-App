@@ -28,12 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            btnSelectBuild = new Button();
+            SuspendLayout();
+            // 
+            // btnSelectBuild
+            // 
+            btnSelectBuild.Location = new Point(30, 52);
+            btnSelectBuild.Name = "btnSelectBuild";
+            btnSelectBuild.Size = new Size(122, 23);
+            btnSelectBuild.TabIndex = 0;
+            btnSelectBuild.Text = "Select Build";
+            btnSelectBuild.UseVisualStyleBackColor = true;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(btnSelectBuild);
+            Name = "Form1";
+            Text = "Site Update Application";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button btnSelectBuild;
     }
 }
