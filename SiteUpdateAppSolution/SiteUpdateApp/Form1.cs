@@ -6,5 +6,17 @@ namespace SiteUpdateApp
         {
             InitializeComponent();
         }
+
+        private void btnSelectBuild_Click(object sender, EventArgs e)
+        {
+            string buildPath = "";
+            OpenFileDialog ofd = new OpenFileDialog();
+
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                buildPath = ofd.FileName;
+                lblBuild.Text = buildPath;
+            }
+        }
     }
 }

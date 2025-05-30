@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             btnSelectBuild = new Button();
+            lblBuild = new Label();
             SuspendLayout();
             // 
             // btnSelectBuild
@@ -39,20 +40,36 @@
             btnSelectBuild.TabIndex = 0;
             btnSelectBuild.Text = "Select Build";
             btnSelectBuild.UseVisualStyleBackColor = true;
+            btnSelectBuild.Click += btnSelectBuild_Click;
+            // 
+            // lblBuild
+            // 
+            lblBuild.AutoSize = true;
+            lblBuild.BackColor = SystemColors.ControlLightLight;
+            lblBuild.BorderStyle = BorderStyle.Fixed3D;
+            lblBuild.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblBuild.Location = new Point(172, 56);
+            lblBuild.Name = "lblBuild";
+            lblBuild.Size = new Size(38, 19);
+            lblBuild.TabIndex = 1;
+            lblBuild.Text = "Build";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(618, 417);
+            Controls.Add(lblBuild);
             Controls.Add(btnSelectBuild);
             Name = "Form1";
             Text = "Site Update Application";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private Button btnSelectBuild;
+        private Label lblBuild;
     }
 }
