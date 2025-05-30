@@ -31,12 +31,13 @@
             btnSelectBuild = new Button();
             lblBuild = new Label();
             btnBackup = new Button();
-            btnStopApp = new Button();
+            btnAppPools = new Button();
+            btnUpdate = new Button();
             SuspendLayout();
             // 
             // btnSelectBuild
             // 
-            btnSelectBuild.Location = new Point(23, 25);
+            btnSelectBuild.Location = new Point(12, 12);
             btnSelectBuild.Name = "btnSelectBuild";
             btnSelectBuild.Size = new Size(122, 23);
             btnSelectBuild.TabIndex = 0;
@@ -50,7 +51,7 @@
             lblBuild.BackColor = SystemColors.ControlLightLight;
             lblBuild.BorderStyle = BorderStyle.Fixed3D;
             lblBuild.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblBuild.Location = new Point(170, 29);
+            lblBuild.Location = new Point(159, 16);
             lblBuild.Name = "lblBuild";
             lblBuild.Size = new Size(35, 19);
             lblBuild.TabIndex = 1;
@@ -58,7 +59,7 @@
             // 
             // btnBackup
             // 
-            btnBackup.Location = new Point(23, 94);
+            btnBackup.Location = new Point(12, 81);
             btnBackup.Name = "btnBackup";
             btnBackup.Size = new Size(122, 23);
             btnBackup.TabIndex = 2;
@@ -66,21 +67,31 @@
             btnBackup.UseVisualStyleBackColor = true;
             btnBackup.Click += btnBackup_Click;
             // 
-            // btnStopApp
+            // btnAppPools
             // 
-            btnStopApp.Location = new Point(23, 197);
-            btnStopApp.Name = "btnStopApp";
-            btnStopApp.Size = new Size(122, 23);
-            btnStopApp.TabIndex = 3;
-            btnStopApp.Text = "Stop App Pools";
-            btnStopApp.UseVisualStyleBackColor = true;
+            btnAppPools.Location = new Point(12, 184);
+            btnAppPools.Name = "btnAppPools";
+            btnAppPools.Size = new Size(122, 23);
+            btnAppPools.TabIndex = 3;
+            btnAppPools.Text = "List App Pools";
+            btnAppPools.UseVisualStyleBackColor = true;
+            // 
+            // btnUpdate
+            // 
+            btnUpdate.Location = new Point(12, 389);
+            btnUpdate.Name = "btnUpdate";
+            btnUpdate.Size = new Size(115, 23);
+            btnUpdate.TabIndex = 4;
+            btnUpdate.Text = "Update Sites";
+            btnUpdate.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(814, 424);
-            Controls.Add(btnStopApp);
+            ClientSize = new Size(818, 424);
+            Controls.Add(btnUpdate);
+            Controls.Add(btnAppPools);
             Controls.Add(btnBackup);
             Controls.Add(lblBuild);
             Controls.Add(btnSelectBuild);
@@ -95,6 +106,7 @@
         private Button btnSelectBuild;
         private Label lblBuild;
         private Button btnBackup;
-        private Button btnStopApp;
+        private Button btnAppPools;
+        private Button btnUpdate;
     }
 }
