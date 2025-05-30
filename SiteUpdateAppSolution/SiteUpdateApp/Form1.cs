@@ -28,6 +28,8 @@ namespace SiteUpdateApp
         private void btnBackup_Click(object sender, EventArgs e)
         {
             // Create window to browse for folder to backup
+            // Would like to make have this be and to be connected stop app pools button
+            // When app pools are stopped it automatically starts backup of the site folder
             using (FolderBrowserDialog fbd = new FolderBrowserDialog()) {
                 fbd.Description = "Select folder to zip.";
 
