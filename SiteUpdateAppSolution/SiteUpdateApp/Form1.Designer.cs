@@ -68,7 +68,7 @@
             // 
             // btnStopApp
             // 
-            btnStopApp.Location = new Point(23, 396);
+            btnStopApp.Location = new Point(23, 197);
             btnStopApp.Name = "btnStopApp";
             btnStopApp.Size = new Size(122, 23);
             btnStopApp.TabIndex = 3;
@@ -79,7 +79,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(958, 636);
+            ClientSize = new Size(814, 424);
             Controls.Add(btnStopApp);
             Controls.Add(btnBackup);
             Controls.Add(lblBuild);
