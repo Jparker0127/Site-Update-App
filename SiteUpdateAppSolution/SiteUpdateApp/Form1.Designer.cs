@@ -30,11 +30,12 @@
         {
             btnSelectBuild = new Button();
             lblBuild = new Label();
+            btnBackup = new Button();
             SuspendLayout();
             // 
             // btnSelectBuild
             // 
-            btnSelectBuild.Location = new Point(30, 52);
+            btnSelectBuild.Location = new Point(23, 25);
             btnSelectBuild.Name = "btnSelectBuild";
             btnSelectBuild.Size = new Size(122, 23);
             btnSelectBuild.TabIndex = 0;
@@ -48,17 +49,28 @@
             lblBuild.BackColor = SystemColors.ControlLightLight;
             lblBuild.BorderStyle = BorderStyle.Fixed3D;
             lblBuild.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblBuild.Location = new Point(172, 56);
+            lblBuild.Location = new Point(170, 29);
             lblBuild.Name = "lblBuild";
-            lblBuild.Size = new Size(38, 19);
+            lblBuild.Size = new Size(35, 19);
             lblBuild.TabIndex = 1;
-            lblBuild.Text = "Build";
+            lblBuild.Text = "Path";
+            // 
+            // btnBackup
+            // 
+            btnBackup.Location = new Point(23, 94);
+            btnBackup.Name = "btnBackup";
+            btnBackup.Size = new Size(122, 23);
+            btnBackup.TabIndex = 2;
+            btnBackup.Text = "Backup";
+            btnBackup.UseVisualStyleBackColor = true;
+            btnBackup.Click += btnBackup_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(618, 417);
+            ClientSize = new Size(958, 636);
+            Controls.Add(btnBackup);
             Controls.Add(lblBuild);
             Controls.Add(btnSelectBuild);
             Name = "Form1";
@@ -71,5 +83,6 @@
 
         private Button btnSelectBuild;
         private Label lblBuild;
+        private Button btnBackup;
     }
 }

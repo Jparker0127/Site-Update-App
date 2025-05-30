@@ -18,5 +18,10 @@ namespace SiteUpdateApp
                 lblBuild.Text = buildPath;
             }
         }
+
+        private void btnBackup_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
