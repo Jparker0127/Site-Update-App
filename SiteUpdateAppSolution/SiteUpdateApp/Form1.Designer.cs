@@ -31,6 +31,7 @@
             btnSelectBuild = new Button();
             lblBuild = new Label();
             btnBackup = new Button();
+            btnStopApp = new Button();
             SuspendLayout();
             // 
             // btnSelectBuild
@@ -65,11 +66,21 @@
             btnBackup.UseVisualStyleBackColor = true;
             btnBackup.Click += btnBackup_Click;
             // 
+            // btnStopApp
+            // 
+            btnStopApp.Location = new Point(23, 396);
+            btnStopApp.Name = "btnStopApp";
+            btnStopApp.Size = new Size(122, 23);
+            btnStopApp.TabIndex = 3;
+            btnStopApp.Text = "Stop App Pools";
+            btnStopApp.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(958, 636);
+            Controls.Add(btnStopApp);
             Controls.Add(btnBackup);
             Controls.Add(lblBuild);
             Controls.Add(btnSelectBuild);
@@ -84,5 +95,6 @@
         private Button btnSelectBuild;
         private Label lblBuild;
         private Button btnBackup;
+        private Button btnStopApp;
     }
 }
